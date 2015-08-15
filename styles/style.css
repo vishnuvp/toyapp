@@ -1,0 +1,91 @@
+body {
+	  min-width: 420px;
+    width: 100%;
+}
+
+#main {
+width: 100%;
+}
+
+body.anonymous {
+  background: url("../images/bg-anonym.png") repeat scroll #666;
+}
+
+.login-form {
+  margin: 15% auto;
+  text-align: center;
+  width: 40%;
+  padding: 0 1% 1%;
+  box-shadow: 0 0 5px #EFEFEF;
+  color: white;
+  transition: all 200ms ease-in;
+  border-radius: 5px;
+}
+.login-form:hover {
+  box-shadow: 0 0 15px #EFEFEF;
+}
+.login-form label, .login-form input {
+  font-size: 1.5em;
+}
+.login-form-head-label {
+  width: 100%;
+  font-size: 2em;
+}
+/* home.php */
+body.auth-user {
+  background: url("../images/bg.png") repeat scroll transparent;
+  margin: 0;
+  padding: 0; 
+}
+
+#header {
+    background: indianred none repeat scroll 0 0;
+    color: white;
+    font-size: 5em;
+    height: 100px;
+    padding: 1%;
+}
+
+#dash-board {
+    margin: 0 auto;
+    padding: 5%;
+    width: 85%;
+}
+
+.dash-options {
+    list-style: outside none none;
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+}
+
+.dash-options li {
+  display: inline-block;
+  margin-left: 1%;
+  padding: 3%;
+  background: cornflowerblue;
+  color: white;
+}
+
+/* secure_share */
+
+
+.input-form {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.input-form label {
+  float: left;
+  width: 47%;
+}
+ 
+.input-form input {
+  float: right;
+  width: 50%
+}
+
+.input-row {
+  width: 100%;
+  padding: 3% 0; 
+}

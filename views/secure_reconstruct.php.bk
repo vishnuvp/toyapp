@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<?php include_once("../includes/head_tags.php");
+	  require_once("../includes/notifications.inc");
+	  require_once("../includes/repoapi.inc"); ?>
+<title>Secure Your Images - ToyApp</title>
+</head>
+<body class="auth-user">
+	<?php include_once("../includes/header.inc"); ?>
+	<div id="dash-board">
+		<div class="input-form">
+			<form method="post" action="secure_reconstruct.php">
+				<div class="input-row">Enter shares seperated by space</div>
+				<div class="input-row"><textarea name="shares" style="width:30em;height: 10em" placeholder="Enter shares seperated by space"></textarea></div>
+				<div class="input-row"><label for="file-name">File name</label><input type="text" name="file-name" placeholder="Enter filename" value="<?php if(isset($_GET['f']))echo $_GET['f']; ?>"/></div>
+				<div class="input-row"><input type="submit" value="Secure Decrypt"/></div>
+			</form>
+		</div>
+	</div>
+	<div id="footer">
+		
+	</div>
+</body>
+<?php
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+	$result = reconstruct($_POST);
+//print_r($result);
+echo "<a href='/toyapp/repo/$result'>Download file</a> <br />";
+}
+?>
